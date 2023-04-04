@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mila</title>
+    <style>
+        div{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-direction: column;
+            
+            
+        }
+        
+        .photo{
+            
+            border: 8px solid black;
+            height: 400px;  
+            width: 600px;
+            margin: 10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="mila2.jpg" class="photo" alt="Mila">
+        <img src="mila.jpg" class ="photo"alt="mila">
+    </div>
+</body>
+</html>
+
+<!--display: flex; will align your child elements one next to each other in a horizontal row. Tip: you can add flex-direction: column; to change it to a vertical row. 
+flex-direction determines your main axis. Default value is row.
+
+justify-content: center; will align the items on your main axis. That means the item will be horizontally centered for our code snippet.
+
+align-items controls your cross axis, i.e. your elements are vertically centered.
+
+You can pass many attributes here, but I'll mention only one: justify-content: space-between;. This will distribute the elements across the row without any margins at the beginning or end.-->

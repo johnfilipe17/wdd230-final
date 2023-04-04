@@ -1,0 +1,37 @@
+<table>
+  <tr>
+    <th>Data 1</th>
+    <th style="background-color: yellow">Data 2</th>
+  </tr>
+  <tr>
+    <td>Calcutta</td>
+    <td style="background-color: yellow">Orange</td>
+  </tr>
+  <tr>
+    <td>Robots</td>
+    <td style="background-color: yellow">Jazz</td>
+  </tr>
+</table>
+
+<!--this takes too much working stylishing every rows and collumns. -->
+
+<!--Instead of doing this, we can specify the information once, on a <col> element. <col> elements are specified inside a <colgroup> container just below the opening <table> tag. We could create the same effect as we see above by specifying our table as follows:-->
+
+    <table>
+        <colgroup>
+          <col />
+          <col style="background-color: yellow" />
+        </colgroup>
+        <tr>
+          <th>Data 1</th>
+          <th>Data 2</th>
+        </tr>
+        <tr>
+          <td>Calcutta</td>
+          <td>Orange</td>
+        </tr>
+        <tr>
+          <td>Robots</td>
+          <td>Jazz</td>
+        </tr>
+      </table>

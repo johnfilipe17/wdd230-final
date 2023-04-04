@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        
+    </style>
+
+ </head>
+ <body>
+    <!--aqui eu vou colocar tudo dentro de diferentes divs para nada ficar na mesma linha, pois o div é um elemento de bloco-->
+    <div>
+        <h2>Text Info</h2>
+    <form action="uri-buri.php" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="John"> <br>
+    </div>
+    <div>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Smith"> <br><br>
+    </div>
+    <div>
+        <h2>Passwords</h2>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" maxlength="12" minlength="4" required> <br><!--esse ultimo max lenght e min length coloca o numero maximo e minimo respectivamente de caracteres e não é obrigatorio. o required não deixa voce ir a diante sem preencher aquela informação.-->
+    </div>
+    <div>
+        <h2>Email</h2>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com"><br>
+        <!--aqui precisa ter um arroba pra mandar.-->
+    </div>
+    <div>
+        <h2>Phone Number</h2>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="(557) 8875-9856"><br>
+    </div>
+    <div>
+        <h2>Dates</h2>
+        <label for="bdate">Birthday</label>
+        <input type="date" id="bdate" name="bdate">
+    </div>
+    <div>
+        <h2>numbers</h2>
+        <label for="quantity">quantity</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100000">
+    </div>
+
+    <div>
+        <h2>Radio Buttons</h2>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title">
+
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." name="title">
+
+        <label for="Phd.">Phd.</label>
+        <input type="radio" id="Phd." name="title">
+
+        <!--toda vez que eu preencher o "for" na linha do label com uma coisa e o id na linha de baixo com o mesmo valor, quando eu clicar na etiqueta ja seleciona a bolinha. MAs se eu deixar o for vazio e não criar ID , eu tenho que clicar necessariamente em cima da bolinha-->
+    </div>
+    <br>
+    <div>
+        <h2>Options</h2>
+        <label for="payment">payment</label>
+        <select name="payment" id="payment">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="cash">cash</option>
+        </select> 
+    </div>
+
+    <div>   
+        <label for="agree">I Read and Agree</label>
+        <input type="checkbox" id="agree" name="agree">
+    </div>
+    <div>
+        <h2>Submiting and Reseting </h2>
+        <input type="submit" value="Submit"><br>
+        <input type="reset" value="Reset">
+    </div>
+
+    <div>
+        <h2>uploading files</h2>
+        <label for="avatar">Choose a profile picture:</label>
+        <input type="file" id="avatar" name="avatar"
+        accept="image/png, image/jpeg, video">
+
+        <!--A valid case-insensitive filename extension, starting with a period (".") character. For example: .jpg, .pdf, or .doc.
+        A valid MIME type string, with no extensions.
+        The string audio/* meaning "any audio file".
+        The string video/* meaning "any video file".
+        The string image/* meaning "any image file".
+        The accept attribute takes a string containing one or more of these unique file type specifiers as its value, separated by commas. For example, a file picker that needs content that can be presented as an image, including both standard image formats and PDF files, might look like this:-->
+    </div>
+
+    <div>
+        <h2>Range</h2>
+        <p>Audio settings:</p>
+            <div>
+            <input type="range" id="volume" name="volume"
+            min="0" max="11">
+            <label for="volume">Volume</label>
+        </div>
+
+        <div>
+            <input type="range" id="cowbell" name="cowbell" 
+            min="0" max="100" value="90" step="10">
+            <label for="cowbell">Cowbell</label>
+        </div>
+
+    </div>
+
+    <!--Notice that each input field must have a name attribute to be submitted.
+    If the name attribute is omitted, the value of the input field will not be sent at all.-->
+    </form>
+ </body>
+ </html>

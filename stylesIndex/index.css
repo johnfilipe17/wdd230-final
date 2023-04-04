@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sofia+Sans+Extra+Condensed:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sofia+Sans+Extra+Condensed:wght@200&family=Varela+Round&display=swap');
+
+img {
+    height: 150px;
+    grid-column: 2/3;
+
+}
+
+header{
+    background-color: rgb(117, 21, 21);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: inherit;
+    margin-right:250px;
+    margin-left: 250px;
+
+}
+
+h1 {
+    color: white;
+    grid-column: 1/2;
+    font-family: 'Lobster', cursive;
+}
+
+footer{
+    
+    font-size: 1.2em;
+    padding: 25px 50px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(117, 21, 21);
+    color: whitesmoke;
+}
+
+ul {
+    justify-content: center ;
+    margin-left:500px;
+    list-style: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+}
+
+h2{
+    margin-left: 500px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 50px;
+}
+
+body{
+    background-color: rgb(233, 233, 197);
+}

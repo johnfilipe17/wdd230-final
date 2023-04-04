@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta name="description" content="submit and order your delicious drink">
+        <link rel="stylesheet" href="styles/fruits.css">
+        <title>Fresh</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    </head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="fruits.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+        
+        </ul>
+        <ul class="social">
+            <li><a href="facebook.com">Facebook <i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="instagram.com">Istagram <i class="fa-brands fa-square-instagram"></i></i></a></li>
+            <li><a href="twitter.com">Twitter <i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+    </header>
+    <main class="order">
+        <div class="form">
+            <h1>Order</h1>
+            <form id="myForm">
+                <label for="fname">First name:
+                <input type="text" id="fname" name="fname" placeholder="John" required> 
+                </label><br>
+            
+                <br>
+                <label for="email">Email
+                <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com" required><br>
+                <!--aqui precisa ter um arroba pra mandar.-->
+                </label>
+                
+                <br>
+                <label for="phone">Phone
+                    <input type="tel" id="phone" name="phone" placeholder="(557) 8875-9856" required>
+                </label>
+                <br>
+                <p>Select your fruits:</p>
+                <select id="select" style="width: 250px;"></select>
+                <select id="select2" style="width: 250px;"></select>
+                <select id="select3" style="width: 250px;"></select>
+                <br>
+                <br>
+                <br> <br>
+                <label for="instructions">Special instructions:
+                <input type="text" id="instruction" name="instruction" maxlength="250" style="width: 300px;height: 130px;"><br>
+                </label>
+                
+
+            <!--Don't place interactive elements such as anchors or buttons inside a label. Doing so makes it difficult for people to activate the form input associated with the label.
+            do it like the example below:
+            <label for="tac">
+                <input id="tac" type="checkbox" name="terms-and-conditions" />
+                I agree to the Terms and Conditions
+<           /label>
+            <p>
+                <a href="terms-and-conditions.html">Read our Terms and Conditions</a>
+            </p>-->
+
+            <!--toda vez que eu preencher o "for" na linha do label com uma coisa e o id na linha de baixo com o mesmo valor, quando eu clicar na etiqueta ja seleciona a bolinha. MAs se eu deixar o for vazio e não criar ID , eu tenho que clicar necessariamente em cima da bolinha-->
+            </div> 
+            </form>
+            
+            <br> <br> <br>
+            <input type="submit" id="submit" value="Order">
+ 
+        </div>
+        <div id="itemCountCard" style="display:none;">You have submitted <span id="itemCount"></span> items.</div>
+        <div id="output"></div>
+            <br>
+            
+            <label for="dateTime" hidden>
+                Datetime
+                <input type="datetime-local" name="dateTime" id="dateTime" required hidden>
+            </label>
+    </main>
+    <footer>
+        <div class="contact-info">
+           <p>5703 Carlsbad Blvd</p>
+           <p>Carlsbad, CA 92011 <i class="fa-solid fa-location-dot"></i></p>
+           <p>+17604760800 <i class="fa-solid fa-phone"></i></p>
+          
+           <a href="https://www.google.com/maps/place/5703-5765+Carlsbad+Blvd,+Carlsbad,+CA+92008,+EUA/@33.1202749,-117.3276842,18z/data=!3m1!4b1!4m15!1m8!3m7!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!2sCarlsbad,+CA,+EUA!3b1!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24!3m5!1s0x80dc72ef6772e169:0xaf2b42f51def0856!8m2!3d33.1202749!4d-117.3269104!16s%2Fg%2F11c66yjgmw">Location <i class="fa-solid fa-map-pin"></i></a>
+        </div>
+    </footer>
+    <script src="scripts/items-sent.js"></script>
+    <script src="scripts/aringa-tunga.js"></script>
+</body>
+</html>

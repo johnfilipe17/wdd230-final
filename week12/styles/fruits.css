@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Delicious+Handrawn&display=swap");
+
+main, body{
+  background-color: rgb(203, 247, 232);
+}
+
+.slideshow-container{
+background-color: rgb(203, 247, 232);
+padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+thead th {
+  text-align: center;
+  padding: 10px;
+  background-color: #7668d0;
+  color: white;
+}
+
+tbody td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #7668d0;
+}
+
+#weather {
+  border: 2px solid #7668d0;
+  display: block;
+  width: 30%;
+  padding: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+
+}
+
+#weather h1 {
+  text-align: center;
+  
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*.picture img{ 
+    height: 30%;  
+    width: 40%;
+    margin: 10px;
+    border:15px solid black 
+   
+}*/
+/* Hide the images until they are loaded */
+.picture:not([src]) {
+  display: none;
+}
+
+
+p,
+h3 {
+  width: 70%;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  color: black;
+  font-weight: 700;
+}
+
+#hamburger {
+  color: black;
+  text-decoration: none;
+  grid-column: 2;
+  text-align: right;
+  margin: auto;
+  font-size: 3em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: white;
+  text-decoration: none;
+}
+
+li a {
+  color:black
+}
+li {
+  list-style: none;
+  font-family: "Barlow", sans-serif;
+  color: black;
+  font-weight: 700;
+}
+
+.socials {
+  list-style: none;
+  color: white;
+}
+
+h1,
+h2 {
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #e79ca9;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.contact-info a {
+  color:black
+}
+
+header {
+  background-color: #e79ca9;
+}
+
+.order label {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.order .form #select, #select2, #select3,#fname,#email,#phone {
+  font-size: 0.9em;
+  font-weight: 300;
+  text-align: left;
+  margin: 15px;
+}
+.order .form h1 {
+  margin-left: 19px;
+}
+
+
+#submit {
+  background-color: #7668d0;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  z-index: 5;
+  width: 150px;
+  height: 50px;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slideshow properties */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  margin: auto;
+  line-height: 80px;
+  text-align: center;
+}
+
+.mySlides .img {
+  vertical-align: middle;
+  border: 2px solid black;
+}
+
+
+/* Next & previous buttons */
+/*.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+*/
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  padding: 8px 12px;
+  /*position: absolute;
+  bottom: 8px;
+  width: 100%;*/
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

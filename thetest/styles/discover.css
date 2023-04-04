@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Roboto:wght@100&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@300;500&family=Mynerve&display=swap');
+
+
+h2 {
+    color:black;
+    font-family: 'Abel', sans-serif;
+}
+
+.discover {
+    color: #000000;
+    margin: 10px 70px 10px 70px;
+    
+}
+
+
+p {
+    color:black;
+    margin: 10px 70px 10px 70px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.logo {
+    width: 130px;
+    height: 130px;
+}

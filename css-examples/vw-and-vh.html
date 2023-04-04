@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        .fifty-vw{
+            width:50vw;
+            background-color: green;
+            border: 1px solid black;
+        }
+        .fifty-percent{
+            width:50%;
+            background-color: yellowgreen;
+            border: 1px solid black;
+        }
+        .twenty-five-vh{
+            height: 25vh;
+            background-color: red;
+        }
+
+        .parent{
+            width:100px;
+            border: 3px solid black;
+        }
+
+    
+    </style>
+    
+ </head>
+ <body>
+    <p> vw e vh são relativos ao tamanho da tela, quando eu digo 50vh eu quero que o elemento seja 50% da altura(h de height) da tela... e s eue disser 38vw eu quero 38 por cento da largura(w de width) da tela 
+    <br> já  a unidade de por cento se refere a porcentagem do elemento pai, e não a tela toda</p>
+    <hr>
+    <div class="box fifty-percent">50%</div>
+    <div class="box fifty-vw">50vw</div>
+    <div class="box twenty-five-vh">25vh</div>
+    <hr>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box fifty-vw">50vw</div>
+        <div class="box twenty-five-vh">25vh</div>
+    </div>
+ </body>
+ </html>
