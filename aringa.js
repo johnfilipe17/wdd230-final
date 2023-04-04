@@ -1,4 +1,4 @@
-const apiKey = "19ef9fa5696576c4823c61b8bbfb08fc";
+const apiKey = word number 4 ;
 const city = "Carlsbad";
 const url = word number 3;
 
