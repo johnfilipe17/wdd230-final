@@ -1,0 +1,126 @@
+{
+    "businesses": [
+        {
+            "name": "Perim",
+            "type": "Supermarket",
+            "Location": {
+                "address1": "rua idelino perim",
+                "city": "Vila Velha",
+                "state": "ES",
+                "zip_code" : "000000"
+            },
+            "phone": "2733991010",
+            "member-level": "gold",
+            "logo": "images/perim2.webp" 
+        },
+        {
+            "name": "Carone",
+            "type": "Supermarket",
+            "Location":{
+                "address1": "Av. Champagnat, 946 ",
+                "city": "Vila Velha",
+                "state": "ES",
+                "zip_code" : "000000"
+            },
+            "phone-numbers": "2721251005",
+            "member-level": "silver",
+            "logo": "images/carone.webp"
+        },
+        {
+            "name": "L'italiano",
+            "type": "Restaurant",
+            "Location":{
+                "address1": "Rua Afonso Pena, 677 ",
+                "city": "Vila Velha",
+                "state": "ES",
+                "zip_code" : "000000"
+            },
+            "phone-numbers": "2730615050",
+            "member-level": "gold",
+            "logo": "images/litaliano.webp"
+        },
+        {
+            "name": "Laboratorio pretti",
+            "type": "medical Lab",
+            "Location":{
+                "address1": "Rua Jorge rizk, 68",
+                "city": "Vila Velha",
+                "state": "ES",
+                "zip_code" : "000000"
+            },
+            "phone-numbers": "2721240400",
+            "member-level": "Silver",
+            "logo": "images/pretti.webp"
+            
+        },
+        {
+            "name": "Mahai",
+            "type": "Restaurant",
+            "Location":{
+                "address1": "Rua Henrique Moscoso, 90",
+                "city": "Vila Velha",
+                "state": "ES",
+                "zip_code" : "0000000"
+            },
+            "phone-numbers": "2734414797",
+            "member-level": "Gold",
+            "logo": "images/mahai.webp"
+            
+        },
+        {
+            "name": "preço baixo",
+            "type": "Pharmacy",
+            "Location":{
+                "address1": " Avenida Santa Leopoldina, 1571",
+                "city": "Vila Velha",
+                "state": "ES",
+                "zip_code" : "000000"
+            },
+            "phone-numbers": "2733398246",
+            "member-level": "Silver",
+            "logo": "images/preco.webp"
+        },
+        {
+            "name":"Fisiomed",
+            "type":"Physiotherapy center",
+            "Location":{
+                "address1": " Avenida Santa Leopoldina, 1925",
+                "city": "Vila Velha",
+                "state": "ES",
+                "zip_code" : "0000000"
+            },
+            "phone-numbers": "2732898909",
+            "member-level": "Silver",
+            "logo": "images/fisio.webp"
+        },
+        {
+            "name": "Correria music bar",
+            "type": "Night club",
+            "Location":{
+                "address1": " Avenida Est. José Júlio de Souza, 740",
+                "city": "Vila Velha",
+                "state": "ES",
+                "zip_code" : "000000"
+            },
+            "phone-numbers": "27981163325",
+            "member-level": "silver",
+            "logo": "images/correria.webp"
+        },
+
+        {
+            "name": "boulevard shopping",
+            "type": "Mall",
+            "Location":{
+                "address1": " Rod. do Sol, 5000",
+                "city": "Vila Velha",
+                "state": "ES",
+                "zip_code" : "0000000"
+            },
+            "phone-numbers": "2733111600",
+            "member-level": "silver",
+            "logo": "images/boule.webp"
+        }
+    ]
+
+
+}
