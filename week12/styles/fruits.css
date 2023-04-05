@@ -62,7 +62,9 @@ section {
   display: none;
 }
 
-
+.logo {
+  width:15%;
+}
 p,
 h3 {
   width: 70%;
@@ -122,7 +124,7 @@ h2 {
 }
 
 footer {
-  background-color: #e79ca9;
+  background-color: #e79c9c;
   text-align: center;
   width: 100%;
   margin-top: 25px;
@@ -142,7 +144,7 @@ footer {
 }
 
 header {
-  background-color: #e79ca9;
+  background-color: #e79c9c;
 }
 
 .order label {
