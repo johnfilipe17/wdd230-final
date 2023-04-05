@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Delicious+Handrawn&display=swap");
 
 main, body{
-  background-color: rgb(203, 247, 232);
+  background-color: papayawhip;
 }
 
 .slideshow-container{
-background-color: rgb(203, 247, 232);
+background-color: papayawhip;
 padding: 20px;
 }
 
@@ -18,18 +18,18 @@ table {
 thead th {
   text-align: center;
   padding: 10px;
-  background-color: #7668d0;
-  color: white;
+  background-color: orange;
+  color: black;
 }
 
 tbody td {
   text-align: center;
   padding: 10px;
-  border: 1px solid #7668d0;
+  border: 1px solid orange;
 }
 
 #weather {
-  border: 2px solid #7668d0;
+  border: 2px solid orange;
   display: block;
   width: 30%;
   padding: 20px;
@@ -64,6 +64,7 @@ section {
 
 .logo {
   width:15%;
+  
 }
 p,
 h3 {
@@ -98,7 +99,7 @@ h3 {
 }
 
 li:hover {
-  background-color: white;
+  
   text-decoration: none;
 }
 
