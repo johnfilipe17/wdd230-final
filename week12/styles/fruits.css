@@ -125,18 +125,20 @@ footer {
   background-color: #e79ca9;
   text-align: center;
   width: 100%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  
 }
 
 .contact-info {
-  text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 20px;
-  margin: 10px;
 }
 
 .contact-info a {
-  color:black
+  color:black;
+  width:100%;
 }
 
 header {
