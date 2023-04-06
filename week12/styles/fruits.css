@@ -64,7 +64,8 @@ section {
 }
 
 .logo {
-  width:15%;
+  width:65%;
+  
   
 }
 p,
@@ -182,7 +183,12 @@ header {
   margin: 15px;
 }
 
-
+/* Media query */
+@media (max-width: 768px) {
+  .logo {
+    width: 155px;
+  }
+}
 
 
 
