@@ -9,6 +9,7 @@ background-color: papayawhip;
 padding: 20px;
 }
 
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -166,8 +167,8 @@ header {
 
 
 #submit {
-  background-color: #7668d0;
-  color: white;
+  background-color: #e79c9c;
+  color: black;
   cursor: pointer;
   padding: 10px;
   border: none;

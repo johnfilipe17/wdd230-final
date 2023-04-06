@@ -1,40 +1,37 @@
-// Retrieve the current count of items from localStorage, or set it to 0 if it doesn't exist
-var count = localStorage.getItem('itemCount');
-if (count === null) {
-  count = 0;
-} else {
-  count = parseInt(count);
-}
+// Get the form element
+const form = document.getElementById('myForm');
 
-// Retrieve the form element from the DOM
-var form = document.getElementById('myForm');
+// Get the item count element
+const itemCount = document.getElementById('itemCount');
 
-// Add an event listener for the form submission
+// Initialize the item count to 0
+let count = 0;
+
+// Add a submit event listener to the form
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // prevent the default form submission behavior
+  // Prevent the default form submission behavior
+  event.preventDefault();
 
-  // Increment the count of items
+  // Get the form data
+  const formData = new FormData(event.target);
+
+  // Increment the item count
   count++;
 
-  // Store the updated count in localStorage
-  localStorage.setItem('itemCount', count);
+  // Update the item count element
+  itemCount.textContent = count;
 
-  
-  var itemCountCard = document.getElementById('itemCountCard');
-  var itemCount = document.getElementById('itemCount');
+  // Store the form data in the browser's local storage
+  localStorage.setItem(`submission${count}`, JSON.stringify({
+    name: formData.get('name'),
+    phone: formData.get('phone'),
+    email: formData.get('email'),
+    option1: formData.get('option1'),
+    option2: formData.get('option2'),
+    option3: formData.get('option3'),
+    information: formData.get('instru')
+  }));
 
-  // Update the itemCount element with the current count of items
-  itemCount.innerText = count;
-
- 
-  itemCountCard.style.display = 'block';
+  // Reset the form
+  form.reset();
 });
-
-var itemCountCard = document.getElementById('itemCountCard');
-var itemCount = document.getElementById('itemCount');
-
-
-itemCount.innerText = count;
-
-// Show the itemCountCard if it was previously hidden
-itemCountCard.style.display = 'block';
