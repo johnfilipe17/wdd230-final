@@ -17,7 +17,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-// Loop through each image and observe it
+// Loop through each image and check it
 images.forEach((image) => {
   observer.observe(image);
 });
