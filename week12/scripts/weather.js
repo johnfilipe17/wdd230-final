@@ -1,5 +1,5 @@
 function getWeatherData(apiKey, location) {
-    const apiUrl = word document2;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=19ef9fa5696576c4823c61b8bbfb08fc&units=imperial `;
   
     fetch(apiUrl)
     .then(response => response.json())

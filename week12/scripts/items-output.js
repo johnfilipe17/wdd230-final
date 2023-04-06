@@ -11,7 +11,7 @@ const formDataDisplay = document.getElementById('formData');
 let count = 0;
 
 // Add a submit event listener to the form
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit',  async function(event) {
   // Prevent the default form submission behavior
   event.preventDefault();
 
@@ -38,20 +38,44 @@ form.addEventListener('submit', function(event) {
   // Reset the form
   form.reset();
 
-   // Display the form data
-   const options = { day: 'numeric', hour: 'numeric', minute: 'numeric' };
-   const date = new Date().toLocaleString('en-US', options);
-   formDataDisplay.innerHTML = `
-     <h2>Form Data:</h2>
+  // Fetch the fruit nutritional data
+  const response = await fetch('https://brotherblazzard.github.io/canvas-content/fruit.json');
+  const fruitData = await response.json();
+
+  // Parse the selected fruits and get their nutritional data
+  const selectedFruits = formData.getAll('fruits');
+  const nutritionalData = selectedFruits.map(fruit => {
+    const data = fruitData.find(item => item.name === fruit);
+    return data ? {
+      name: data.name,
+      carbohydrates: data.nutrition.carbohydrates,
+      protein: data.nutrition.protein,
+      fat: data.nutrition.fat,
+      sugar: data.nutrition.sugar,
+      calories: data.nutrition.calories
+    } : null;
+  }).filter(fruit => fruit !== null);
+
+   // Display the form data and the nutritional data
+  const options = { day: 'numeric', hour: 'numeric', minute: 'numeric' };
+  const date = new Date().toLocaleString('en-US', options);
+  formDataDisplay.innerHTML = `
+    <h2>Form Data:</h2>
      <ul>
-       <li>Name: ${formData.get('name')}</li>
-       <li>Phone: ${formData.get('phone')}</li>
-       <li>Email: ${formData.get('email')}</li>
-       <li>Option 1: ${formData.get('option1')}</li>
-       <li>Option 2: ${formData.get('option2')}</li>
-       <li>Option 3: ${formData.get('option3')}</li>
-       <li>instructions: ${formData.get('instru')}</li>
+     <li>Name: ${formData.get('name')}</li>
+     <li>Phone: ${formData.get('phone')}</li>
+     <li>Email: ${formData.get('email')}</li>
+     <li>Option 1: ${formData.get('option1')}</li>
+     <li>Option 2: ${formData.get('option2')}</li>
+     <li>Option 3: ${formData.get('option3')}</li>
+     <li>Nutritional Information:</li>
+     <ul>
+       ${nutritionalData.map(fruit => `
+         <li>${fruit.name} - Carbohydrates: ${fruit.carbohydrates}, Protein: ${fruit.protein}, Fat: ${fruit.fat}, Sugar: ${fruit.sugar}, Calories: ${fruit.calories}</li>
+       `).join('')}
      </ul>
-     <p>Date: ${date}</p>
-   `;
- });
+     <li>instructions: ${formData.get('instru')}</li>
+   </ul>
+   <p>Order Date: ${date}</p>
+ `;
+});

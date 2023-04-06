@@ -10,7 +10,7 @@ const dates = [
 ];
 
 // Build the API URL
-const apiUrl = word document number one ;
+const apiUrl =`https://api.openweathermap.org/data/2.5/forecast?lat=33.158092&lon=-117.350594&appid=19ef9fa5696576c4823c61b8bbfb08fc` ;
 
 // Fetch the weather data
 fetch(apiUrl)
