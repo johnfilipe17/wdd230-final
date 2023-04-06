@@ -9,7 +9,6 @@ background-color: papayawhip;
 padding: 20px;
 }
 
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -36,12 +35,10 @@ tbody td {
   padding: 20px;
   letter-spacing: 1px;
   font-weight: 400;
-
 }
 
 #weather h1 {
-  text-align: center;
-  
+  text-align: center; 
 }
 
 section {
@@ -51,13 +48,6 @@ section {
   flex-direction: column;
 }
 
-/*.picture img{ 
-    height: 30%;  
-    width: 40%;
-    margin: 10px;
-    border:15px solid black 
-   
-}*/
 /* Hide the images until they are loaded */
 .picture:not([src]) {
   display: none;
@@ -65,8 +55,6 @@ section {
 
 .logo {
   width:65%;
-  
-  
 }
 p,
 h3 {
@@ -76,7 +64,6 @@ h3 {
   color: black;
   font-weight: 700;
 }
-
 #hamburger {
   color: black;
   text-decoration: none;
@@ -85,13 +72,11 @@ h3 {
   margin: auto;
   font-size: 3em;
 }
-
 .menu {
   display: flex;
   justify-content: space-around;
   padding: 20px;
 }
-
 .social {
   display: flex;
   justify-content: space-around;
@@ -99,9 +84,7 @@ h3 {
   letter-spacing: 1px;
   text-decoration: none;
 }
-
 li:hover {
-  
   text-decoration: none;
 }
 
@@ -132,7 +115,6 @@ footer {
   width: 100%;
   margin-top: 25px;
   margin-bottom: 15px;
-  
 }
 
 .contact-info {
@@ -166,7 +148,6 @@ header {
   margin-left: 19px;
 }
 
-
 #submit {
   background-color: #e79c9c;
   color: black;
@@ -190,20 +171,6 @@ header {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* slideshow properties */
 
 * {
@@ -223,24 +190,6 @@ header {
   border: 2px solid black;
 }
 
-
-/* Next & previous buttons */
-/*.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-*/
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -257,9 +206,6 @@ header {
   color: black;
   font-size: 25px;
   padding: 8px 12px;
-  /*position: absolute;
-  bottom: 8px;
-  width: 100%;*/
   text-align: center;
 }
 
