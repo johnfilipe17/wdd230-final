@@ -2,6 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jf weather</title>
+    <link rel="stylesheet" href="jfweathercss/styles.css">
+    <!--google fonts start-->
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap" rel="stylesheet">
+    <!--google fonts end-->
+    <!--font awesome start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!--font awesome ,end-->
+    <script src="jfweatherscript/script.js" defer></script>
+</head>
+<body>
+    <h1>JF Weather</h1>
+    <div class="container">
+        <div class="form">
+            <h3>Type a city to check the weather:</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="City name" id="city-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+        <div id="weather-data" class="hide">
+            <h2><i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+                <img src="https://flagsapi.com/:country_code/:style/:size.png"
+                alt="country flag" 
+                id="country"/>
+            </h2>
+            <p id="temperature"><span></span>&deg;C</p>
+            <div id="description-container">
+                <p id="description"></p>
+                <img src="" alt="weather condition" id="weather-icon">
+            </div>
+            <div id="details-container">
+                <p id="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+            </div>
+            <div id="wind">
+                <p id="humidity">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+            
+        </div>
+    </div>    
+</body>
+</html>
+
+
+
+
+
+
+
+
+ <!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=text, initial-scale=1.0">
     <link rel="stylesheet" href="stylesIndex/index.css">
@@ -16,7 +82,7 @@
     </header>
     <main>
     <nav>
-        <h2>WDD 230 Assignment Portal</h2>
+        <!--<h2>WDD 230 Assignment Portal</h2>
         <ul>
             <li><a href="designprinciples.html">Lesson 2: Design Principles</a></li>
             <li><a href="test.html">Lesson 3: Website planning</a></li>
@@ -43,4 +109,4 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
 </body>
-</html>
+</html>  -->
